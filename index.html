@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tempo Master — Precision Audio Metronome</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><span>⏱️</span><h1>Tempo Master</h1></div>
+    <a href="https://sabhyamtrivedycoder.github.io/portfolio/" target="_blank" class="nav-portfolio">Portfolio ↗</a>
+  </header>
+  <main class="main">
+    <div class="display-circle" id="pulseCircle">
+      <span id="bpmDisplay">120</span>
+      <span class="bpm-label">BPM</span>
+    </div>
+    <div class="controls">
+      <input type="range" id="bpmSlider" min="40" max="240" value="120">
+      <div class="btns">
+        <button id="toggleBtn" class="btn primary">Start</button>
+        <button id="tapBtn" class="btn secondary">Tap Tempo</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Engineered by <a href="https://github.com/sabhyamtrivedycoder" target="_blank">Sabhyam Trivedy</a> • MIT License</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
